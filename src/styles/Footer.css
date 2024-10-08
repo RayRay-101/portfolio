@@ -1,0 +1,130 @@
+.section {
+    height: 17rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(59, 159, 202, 0.2);
+    padding-bottom: 2rem;
+    color: #fff;
+    border-top: 2px solid teal;
+    font-family: 'noto sans', sans-serif;
+
+}
+
+.section .first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 3rem;
+}
+
+.section .social-links a {
+    margin: 0 1rem;
+    transition: transform 0.3s ease;  /* Scale on hover */
+}
+
+.section .social-links a:hover {
+    transform: scale(1.2);  /* Hover effect */
+}
+
+.section .social-links img {
+    height: 3rem;
+    width: 3rem;
+    /* filter: invert(100%);  White icons */
+}
+
+.section .logo p {
+    font-size: 2rem;
+    color: aqua;
+    font-weight:800;
+    margin-left: 8rem;
+}
+
+.section .email p {
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.section hr {
+    width: 80%;
+    border: 0.5px solid #555;
+    margin: 1rem 0;
+}
+
+.section .copy {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}
+
+/* Medium Devices (Tablets, 768px and below) */
+@media (max-width: 768px) {
+    .section {
+        height: auto;
+        padding-bottom: 1.5rem;
+    }
+
+    .section .first {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section .logo p {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .section .email p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .section hr {
+        width: 90%;
+    }
+
+    .section .social-links {
+        margin-top: 1rem;
+    }
+
+    .section .copy {
+        font-size: 14px;
+    }
+}
+
+/* Small Devices (Mobile Phones, 480px and below) */
+@media (max-width: 480px) {
+    .section {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .section .logo p {
+        font-size: 1.6rem;
+    }
+
+    .section .email p {
+        font-size: 1.1rem;
+    }
+
+    .section .social-links img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .section .copy {
+        font-size: 12px;
+    }
+}

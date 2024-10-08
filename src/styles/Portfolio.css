@@ -1,0 +1,92 @@
+
+.portfolio {
+    padding: 2rem;
+    background-color: #92b1bf;
+    text-align: center;
+    color: #333;
+    height: 100%;
+    font-family: 'noto sans' sans-serif;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #3b9fca;
+}
+
+.portfolio p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+/* Project grid layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    /* display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding: 0 2rem; */
+}
+
+/* Each project card */
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #3b9fca;
+}
+
+.project p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Links to view projects */
+.project a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3b9fca;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #2c7a9a;
+}
+
+/* Project screenshot styles */
+.project-screenshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    object-fit: cover;
+    min-height: 200px;
+}

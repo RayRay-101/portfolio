@@ -1,0 +1,155 @@
+.nav__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(59, 159, 202, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  font-family: 'noto sans', sans-serif;
+
+}
+.nav__header.scrolled {
+  background-color: rgba(59, 159, 202, 0.9);
+}
+.nav__header .logo {
+  color: aqua;
+  margin-left: 10rem;
+  }
+
+.nav__header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav__header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__header nav ul li {
+    display: flex;
+    align-items: center;
+  margin-right: 5rem;
+}
+.nav__header nav ul .button {
+  border-radius: 10px;
+  height: 65px;
+  width: 200px;
+  margin-right: 2rem;
+  background-color: aqua;
+  font-size: 28px;
+  border: none;
+}
+
+.nav__header nav ul button li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.nav__header nav ul button li a {
+  color: black;
+}
+
+.nav__header nav ul .button li a:focus {
+  color: white;
+}
+.nav__header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav__header nav a:focus {
+  color: aqua;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width:1200px) {
+  .nav__header .logo {
+    margin-left: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .nav__header nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: rgba(59, 159, 202, 0.9);
+    transition: right 0.3s ease-in-out;
+    padding-top: 2rem;
+  }
+
+  .nav__header nav.open ul {
+    right: 0;
+  }
+
+  .nav__header nav ul li {
+    margin: 1rem 0;
+  }
+
+  .nav__header nav ul .button {
+    margin-left: 2.5rem;
+    text-align: center;
+    background: transparent;
+    color: white;
+  }
+}
+.nav__header nav.open .hamburger span:first-child {
+  transform: rotate(45deg);
+}
+
+.nav__header nav.open .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__header nav.open .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+}
