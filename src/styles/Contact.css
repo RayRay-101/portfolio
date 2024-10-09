@@ -108,7 +108,7 @@
 /* Medium Devices (Tablets, 768px and below) */
 @media (max-width: 768px) {
     .contact-section {
-        margin: 2rem;
+        margin: 10rem 3rem;
         padding: 1.5rem;
     }
 
@@ -146,7 +146,7 @@
 /* Small Devices (Mobile Phones, 480px and below) */
 @media (max-width: 480px) {
     .contact-section {
-        margin: 1rem;
+        margin:8rem 3rem;
         padding: 1rem;
     }
 
