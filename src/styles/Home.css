@@ -152,7 +152,7 @@
 
 
 /* Medium Devices (Tablets, 768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .home {
       flex-direction: column;
       justify-content: flex-start; /* Align items to start */
@@ -188,6 +188,13 @@
       height: 30rem;
       width: auto; /* Keep aspect ratio */
       margin-right: 0;
+  }
+  .about h1 {
+    text-align: center;
+  }
+
+  .p {
+    text-align: center;
   }
 
   .project {
@@ -240,11 +247,25 @@
       margin: 0 1rem; /* Reduce margin for smaller screens */
   }
 }
-/* For screens above 745px */
-@media (min-width: 745px) {
-  .homepage {
-    margin-top: 10rem;
-    margin-left: 0.5rem;
-    margin-right: 5rem;
+@media (min-width: 1000px) and (max-width: 1700px) {
+  .home {
+    padding-top: 80px;
   }
+  .homepage {
+    text-align: left;
+    margin-left: 5rem;
+  }
+  .homepageImage {
+    height: 45rem;
+    width: 100%;
+    font-size: 22px;
+    margin: 4rem auto;    
+}
+
+.homepageImage img {
+    height: 100%;
+    width: 100%;
+    width: auto; /* Keep aspect ratio */
+    margin-right: 0;
+}
 }

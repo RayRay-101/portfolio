@@ -16,7 +16,7 @@
     color: #fff;
     border-top: 2px solid teal;
     font-family: 'noto sans', sans-serif;
-
+    z-index: 1;
 }
 
 .section .first {
