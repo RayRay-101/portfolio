@@ -11,14 +11,14 @@ const Portfolio = () => {
       name: "D-Blinks Food Delivery",
       description: "A food delivery app that connects individuals to best restaurants and eateries nearby. Food is also delivered with a blink of an eye",
       link: "#",
-      screenshot:<img src={FoodD} alt="Food Delivery App" />
+      screenshot:<img src={FoodD} loading="lazy" fetchpriority="high" alt="Food Delivery App" />
       
     },
     {
       name: "Chat Application",
       description: "A food delivery app that connects individuals to best restaurants and eateries nearby. Food is also delivered with a blink of an eye",
       link:"https://chat-app-plum-nu.vercel.app",
-      screenshot:<img src={ChatApp} alt="Chat Application" />
+      screenshot:<img src={ChatApp} loading="lazy" fetchpriority="high" alt="Chat Application" />
       
     }
   ]

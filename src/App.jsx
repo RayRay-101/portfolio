@@ -5,11 +5,13 @@ import Portfolio from './sections/Portfolio'
 import About from './sections/About'
 import Contact from './sections/Contact'
 import Resume from './sections/Resume'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
+import ScrollToTop from './sections/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className='App'>
         <Navbar />
         <Routes>

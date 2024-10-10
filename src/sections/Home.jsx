@@ -23,14 +23,14 @@ const Home = () => {
       name: "D-Blinks Food Delivery",
       description: "A food delivery app that connects individuals to best restaurants and eateries nearby. Food is also delivered with a blink of an eye",
       link: "#",
-      screenshot:<img src={FoodD} alt="Food Delivery App" />
+      screenshot:<img src={FoodD} loading="lazy" fetchpriority="high" alt="Food Delivery App" />
       
     },
     {
       name: "Chat Application",
       description: "A food delivery app that connects individuals to best restaurants and eateries nearby. Food is also delivered with a blink of an eye",
       link:"https://chat-app-plum-nu.vercel.app",
-      screenshot:<img src={ChatApp} alt="Chat Application" />
+      screenshot:<img src={ChatApp} loading="lazy" fetchpriority="high" alt="Chat Application" />
       
     }
   ]
@@ -50,7 +50,7 @@ const Home = () => {
         </button>
       </div>
       <div className="homepageImage">
-        <img src={HomePicture} alt="man coding" />
+        <img src={HomePicture} loading="lazy" fetchpriority="high" alt="man coding" />
       </div>
     </div>
 
@@ -58,34 +58,34 @@ const Home = () => {
       <h1>My Skills</h1>
       <div className="techSkills">
       <div className="name">
-        <img src={html} alt="tech"/>
+        <img src={html} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>HTML</p>
         </div>
         <div className="name">
-        <img src={css} alt="tech"/>
+        <img src={css} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>CSS</p>
         </div>
         <div className="name">
-        <img src={js} alt="tech"/>
+        <img src={js} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>Javascript</p>
         </div>
         <div className="name">
-        <img src={React} alt="tech"/>
+        <img src={React} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>ReactJS</p>
         </div>
 
         <div className="name">
-        <img src={MongoDB} alt="tech"/>
+        <img src={MongoDB} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>MongoDB</p>
         </div>
 
         <div className="name">
-        <img src={Express} alt="tech"/>
+        <img src={Express} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>ExpressJS</p>
         </div>
         
         <div className="name">
-        <img src={NodeJS} alt="tech"/>
+        <img src={NodeJS} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>NodeJS</p>
         </div>
       </div>

@@ -8,10 +8,10 @@ const Footer = () => {
         <div className='first'>
             <div className='social-links'>
                 <a href="https://www.linkedin.com/in/raymond-addo-4b7346207">
-                <img src={LinkedIn} alt="linkedin icon" />
+                <img src={LinkedIn} loading="lazy" fetchpriority="high" alt="linkedin icon" />
                 </a>
                 <a href="https://github.com/RayRay-101">
-                <img className="github" src={Github} alt="github icon" />
+                <img className="github" src={Github} loading="lazy" fetchpriority="high" alt="github icon" />
                 </a>
             </div>
             <div className='logo'>

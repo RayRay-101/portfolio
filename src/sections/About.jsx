@@ -21,34 +21,34 @@ const About = () => {
       <h1>My Skills</h1>
       <div className="techSkills">
         <div className="name">
-        <img src={html} alt="tech"/>
+        <img src={html} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>HTML</p>
         </div>
         <div className="name">
-        <img src={css} alt="tech"/>
+        <img src={css} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>CSS</p>
         </div>
         <div className="name">
-        <img src={js} alt="tech"/>
+        <img src={js} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>Javascript</p>
         </div>
         <div className="name">
-        <img src={React} alt="tech"/>
+        <img src={React} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>ReactJS</p>
         </div>
 
         <div className="name">
-        <img src={MongoDB} alt="tech"/>
+        <img src={MongoDB} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>MongoDB</p>
         </div>
 
         <div className="name">
-        <img src={Express} alt="tech"/>
+        <img src={Express} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>ExpressJS</p>
         </div>
         
         <div className="name">
-        <img src={NodeJS} alt="tech"/>
+        <img src={NodeJS} loading="lazy" fetchpriority="high" alt="tech"/>
         <p>NodeJS</p>
         </div>
 

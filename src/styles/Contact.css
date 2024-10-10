@@ -106,7 +106,7 @@
     }
 }
 /* Medium Devices (Tablets, 768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .contact-section {
         margin: 10rem 3rem;
         padding: 1.5rem;
