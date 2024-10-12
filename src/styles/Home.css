@@ -243,6 +243,10 @@
       margin-right: 0;
   }
 
+  .project-grid {
+    margin: 0 2rem;
+
+  }
   .project {
       margin: 0 1rem; /* Reduce margin for smaller screens */
   }
