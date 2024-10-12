@@ -125,12 +125,12 @@
     flex-direction: column;
     position: fixed;
     top: 5rem;
-    right: -30%;
-    width: 30%;
+    right: -40%;
+    width: 40%;
     height: calc(100vh - 5rem);
     background-color: rgba(59, 159, 202, 0.9);
     transition: right 0.3s ease-in-out;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     border-top: 1px solid aqua;
   }
 
@@ -140,7 +140,7 @@
 
   .nav__header nav ul li {
     margin: 1rem 0;
-    font-weight: bolder;
+    font-weight:normal;
     text-align: center;
   }
   .nav__header nav ul li:hover,
@@ -150,9 +150,16 @@
   }
   .nav__header nav ul li:last-child {
     color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
   .nav__header nav ul li:last-child a {
     color: white;
+  }
+  .nav__header nav ul li:last-child  {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .nav__header nav ul .button {
@@ -175,5 +182,17 @@
 @media (min-width: 1000px) and (max-width: 1700px) {
   .nav__header .logo{
     margin-left: 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .nav__header nav ul {
+  top: 5rem;
+  right: -45%;
+  width: 45%;
+  }
+  .nav__header nav ul li:last-child {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
