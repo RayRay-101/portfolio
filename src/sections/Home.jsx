@@ -1,15 +1,9 @@
 import "../styles/Home.css"
-import "../styles/About.css"
 import { Link } from 'react-router-dom'
 import HomePicture from "../assets/homepic.png"
 
-import html from "../assets/html.png"
-import css from "../assets/css.png"
-import js from "../assets/js.png"
-import React from "../assets/React.png"
-import MongoDB from "../assets/MongoDB.png"
-import NodeJS from "../assets/NodeJS.png"
-import Express from "../assets/Express.png"
+import Phone from "../assets/phone.png"; 
+import Email from "../assets/email.png"; 
 
 import FoodD from "../assets/foodd.jpeg"
 import ChatApp from "../assets/chatapp.jpeg"
@@ -54,45 +48,67 @@ const Home = () => {
       </div>
     </div>
 
-    <div className='about'>    
-      <h1>My Skills</h1>
-      <div className="techSkills">
-      <div className="name">
-        <img src={html} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>HTML</p>
-        </div>
-        <div className="name">
-        <img src={css} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>CSS</p>
-        </div>
-        <div className="name">
-        <img src={js} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>Javascript</p>
-        </div>
-        <div className="name">
-        <img src={React} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>ReactJS</p>
-        </div>
 
-        <div className="name">
-        <img src={MongoDB} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>MongoDB</p>
-        </div>
-
-        <div className="name">
-        <img src={Express} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>ExpressJS</p>
-        </div>
-        
-        <div className="name">
-        <img src={NodeJS} loading="lazy" fetchpriority="high" alt="tech"/>
-        <p>NodeJS</p>
-        </div>
+<div className="skills">
+<h1>My Skills</h1>
+<p>Check out all my skills in order of Proficiency</p>
+<div className="skill-bars">
+  <div className="skill-bar">
+    <div className="skill-name">HTML/CSS</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "90%" }}>
+        <span>90%</span>
       </div>
     </div>
+  </div>
+  <div className="skill-bar">
+    <div className="skill-name">JavaScript</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "85%" }}>
+        <span>85%</span>
+      </div>
+    </div>
+  </div>
+  <div className="skill-bar">
+    <div className="skill-name">React</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "90%" }}>
+        <span>90%</span>
+      </div>
+    </div>
+  </div>
+  <div className="skill-bar">
+    <div className="skill-name">Node.js</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "75%" }}>
+        <span>75%</span>
+      </div>
+    </div>
+  </div>
+  <div className="skill-bar">
+    <div className="skill-name">Express.js</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "70%" }}>
+        <span>70%</span>
+      </div>
+    </div>
+  </div>
+  <div className="skill-bar">
+    <div className="skill-name">MongoDB</div>
+    <div className="skill-level">
+      <div className="skill-progress" style={{ width: "80%" }}>
+        <span>80%</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-    
+
+    <div className="projects">
+
       <h1 className="p">My Projects.</h1>
+      <p>Check out my recent projects</p>
       <div className="project-grid">
         {projects.map((project, index) => (
           <div key={index} className="project">
@@ -101,11 +117,34 @@ const Home = () => {
             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
             <div className="project-screenshot">{project.screenshot}</div>
           </div>
+          
         ))}
       </div>
+<div className='contactme'>
+          <h1>Contact Me</h1>
+          <p>Check out my contactme details</p>
+
+        <div className='contactme-container'>
+          <div className='contactme-details'>
+          <div className='image'>
+            <img src={Phone} loading="lazy" fetchpriority="high" alt="" />
+            </div>
+            <h3>CONTACT NUMBER</h3>
+            <p>+233 257837362</p>
+          </div>
+  
+          <div className='contactme-details'> 
+            <div className='image'>
+            <img src={Email} loading="lazy" fetchpriority="high" alt="" />
+            </div>
+            <h3>EMAIL ADDRESS</h3>
+            <p>addoraymond123@gmail.com</p>
+          </div>
+        </div>
+        </div>  
+    </div>
       <Footer />
-  </>
-  )
+  </>)
 }
 
 export default Home

@@ -1,3 +1,21 @@
+h1 {
+  /* font-size: 2.5rem; */
+  text-shadow: 0px 20px 5px rgb(78, 71, 71);
+}
+
+h3 {
+  color: #fff;
+
+}
+
+p {
+  font-size: 1.4rem;
+ 
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ }
 .home{
     height: 100vh;
     display: flex;
@@ -10,6 +28,9 @@
     font-size: larger;
     font-family: 'noto sans', sans-serif;
 }
+.homepage h1 {
+  text-shadow: 0px 0px 0px;
+}
 .wave-emoji {
     font-size: 30px;
     display: inline-block; 
@@ -21,7 +42,7 @@
       transform: rotate(0deg);  
   }
     50% {
-      transform: rotate(20deg);
+      transform: rotate(15deg);
       
     }
   }
@@ -87,9 +108,113 @@
     margin-right: 5rem;
 }
 
-.about h1 {
-  margin: 5rem;
+.skills,
+.projects,
+.homepage,
+.contactme {
+  animation: appear 5s ;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.skills {
+  margin: auto;
+  padding: 4rem 0;
+  text-align: center;
+}
+.skills p {
+  margin-bottom: 3rem;
+}
+
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-bar {
+  width: 80%;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.skill-name {
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.skill-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.skill-progress {
+  background-color: aqua;
+  height: 20px;
+  border-radius: 20px;
+  animation: fill-progress 2s ease-in-out;
+  position: relative;
+}
+
+.skill-progress span {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  transform: translateY(-100%);
+  padding: 0.2rem 0.5rem;
+  z-index: 1;
+  animation: slide-in 2s ease-in-out;
+}
+
+@keyframes fill-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 10px;
+    opacity: 1;
+  }
+}
+
+.projects p{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.skills, .projects, .contactme {
+  text-align: center;
+}
+
 
 .p {
   margin: 5rem 5rem;
@@ -150,6 +275,33 @@
   min-height: 200px;
 }
 
+.contactme {
+  margin-top: 2rem;
+}
+
+.contactme-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contactme-details .image{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  background-color: white;
+}
+.contactme-details img {
+  width: 5rem;
+  height: 5rem;
+}
 
 /* Medium Devices (Tablets, 768px and below) */
 @media (max-width: 1000px) {
@@ -201,6 +353,13 @@
       margin-left: 2rem;
       margin-right: 2rem;
   }
+  .contactme-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    /* flex-direction: row; */
+  }
 }
 
 /* Small Devices (Mobile Phones, 480px and below) */
@@ -250,14 +409,27 @@
   .project {
       margin: 0 1rem; /* Reduce margin for smaller screens */
   }
+ 
 }
-@media (min-width: 1000px) and (max-width: 1700px) {
+@media (max-width: 700px) {
+  .contactme-container {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* flex-direction: row; */
+  }
+  
+}
+@media (min-width: 1000px) {
   .home {
     padding-top: 75px;
   }
   .homepage {
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 15rem;
   }
   .homepageImage {
     height: 40rem;
@@ -272,4 +444,69 @@
     width: auto; /* Keep aspect ratio */
     margin-right: 0;
 }
+
+.skills {
+  max-width: 1500px;
+
 }
+
+
+  .skill-bar {
+    width: 90%;
+  }
+  /* Skill Bars */
+.skill-bars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap:4rem;
+  margin-top: 2rem;
+}
+
+.skill-bar {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contactme-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+  /* flex-direction: row; */
+}
+.contactme-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem; 
+  margin-bottom: 3rem;
+}
+.contactme-details .image{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  background-color: white;
+}
+.contactme-details img {
+  width: 5rem;
+  height: 5rem;
+}
+}
+/* @media (max-width: 700px) {
+  .home {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  .homepage {
+    margin: 0 2rem;
+    text-align: center;
+  }
+  .homepage button {
+    margin: 4rem auto;
+  }
+} */
