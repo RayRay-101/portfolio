@@ -9,6 +9,10 @@
 .about p {
     font-size: large;
 }
+.about h1 {
+margin-bottom: 5rem;
+margin-top: 5rem;
+}
 .about p span {
     color: aquamarine;
 }
