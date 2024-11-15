@@ -124,10 +124,10 @@
   .nav__header nav ul {
     flex-direction: column;
     position: fixed;
-    top: -5rem;
+    top: 5rem;
     right: -40%;
     width: 40%;
-    height: calc(100vh + 5rem);
+    height: calc(100vh - 5rem);
     background-color: rgba(59, 159, 202, 0.9);
     transition: right 0.3s ease-in-out;
     /* padding-top: 2rem; */

@@ -319,7 +319,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   background-color: white;
 }
 .contactme-details img {
@@ -394,7 +394,7 @@ p {
       height: auto; /* Allow for auto height */
       padding-top: 80px; /* Space for the navbar */
       margin-top: 5rem;
-
+      gap: 0rem;
   }
 
   .homepage {
@@ -451,7 +451,7 @@ p {
 }
 @media (min-width: 1000px) {
   .home {
-    padding-top: 75px;
+    padding-top: 75px;  
   }
   .homepage {
     text-align: left;
