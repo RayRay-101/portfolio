@@ -32,6 +32,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8.5rem;
 }
 .homepage {
     margin: 0rem auto ;
@@ -96,6 +97,7 @@ p {
     font-size: 28px;
     border: none;
     margin-top: 2rem;
+
 }
 .homepage button  ul {
     list-style: none;
@@ -113,13 +115,13 @@ p {
     color: black;
 }
 .homepageImage {
-
 }
 .homepageImage img {
     height: 50rem;
     width: 60rem;
     object-fit:fill;
     margin-right: 5rem;
+    
 }
 
 .skills,
@@ -142,11 +144,12 @@ p {
 }
 
 .skills {
-  margin: auto;
+  margin: 0rem auto;
   padding: 4rem 0;
   text-align: center;
 }
 .skills p {
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -156,6 +159,7 @@ p {
   align-items: center;
   margin-top: 2rem;
   flex-wrap: wrap;
+
 }
 
 .skill-bar {
@@ -291,6 +295,11 @@ p {
 
 .contactme {
   margin-top: 2rem;
+  
+}
+.contactme p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contactme-details {
@@ -300,6 +309,7 @@ p {
   gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  /* margin-left: auto; */
 }
 .contactme-details .image{
   height: 8rem;
@@ -323,7 +333,7 @@ p {
       flex-direction: column;
       justify-content: flex-start; /* Align items to start */
       height: auto; /* Allow for auto height to fit content */
-      padding-top: 80px; /* Space for the navbar */
+      padding-top: 8rem /* Space for the navbar */
   }
 
   .homepage {
@@ -383,6 +393,8 @@ p {
       justify-content: flex-start; /* Align items to start */
       height: auto; /* Allow for auto height */
       padding-top: 80px; /* Space for the navbar */
+      margin-top: 5rem;
+
   }
 
   .homepage {
@@ -509,5 +521,19 @@ p {
 .contactme-details img {
   width: 5rem;
   height: 5rem;
+}
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .home{
+    gap: 5rem;
+}
+.homepage {
+  margin-left: 10rem;
+  
+}
+
+.contactme-container {
+  gap: 15rem;
 }
 }

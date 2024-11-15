@@ -122,7 +122,7 @@ const Home = () => {
       </div>
 <div className='contactme'>
           <h1>Contact Me</h1>
-          <p>Check out my contactme details</p>
+          <p>Check out my contact details</p>
 
         <div className='contactme-container'>
           <div className='contactme-details'>
